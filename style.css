@@ -346,7 +346,7 @@ video {
 	z-index: -2;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 	body {
 		background-size: auto;
 	}
@@ -368,7 +368,17 @@ video {
 		display: none;
 	}
 
+	.videoSection {
+		margin: 0;
+		margin-top: 30px;
+	}
+
+	.videoBlock {
+		width: 300px;
+		margin: 0 auto;
+	}
+
 	video {
-		width: 500px;
+		width: 300px;
 	}
 }
