@@ -240,7 +240,7 @@ form {
 	outline: none;
 }
 
-.playButton:active {
+.playButton:hover {
 	opacity: 0.9;
 }
 
@@ -344,4 +344,31 @@ video {
 	background-color: #20f7ae;
 	opacity: 0.43;
 	z-index: -2;
-}	
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		background-size: auto;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-logo {
+		margin-bottom: 20px;
+	}
+
+	.form-inputs input {
+		width: auto;
+	}
+
+  .rectanglesBlock {
+		display: none;
+	}
+
+	video {
+		width: 500px;
+	}
+}
