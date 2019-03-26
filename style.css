@@ -35,11 +35,16 @@ header {
 	border: 2px solid white;
 	border-radius: 50px;
 	cursor: pointer;
-	transition: opacity 300ms;
+	outline: none;
+	transition: opacity 100ms;
 }
 
 .header-button:hover {
 	opacity: 0.7;
+}
+
+.header-button:active {
+	border: 2px solid grey;
 }
 
 .formSection {
@@ -117,11 +122,15 @@ form {
 	text-transform: uppercase;
 	cursor: pointer;
 	outline: none;
-	transition: opacity 300ms;
+	transition: opacity 100ms;
 }
 
 .form-submitButton:hover {
 	opacity: 0.7;
+}
+
+.form-submitButton:active {
+	border: 2px solid green;
 }
 
 .form-or {
@@ -144,6 +153,7 @@ form {
 	font-weight: 500;
 	margin: 19px 20px;
 }
+
 .form-signInButton {
 	width: 264px;
 	height: 55px;
@@ -157,9 +167,10 @@ form {
 	border: 0;
 	background: 0;
 	cursor: pointer;
-	transition: opacity 300ms;
+	transition: opacity 100ms;
 	background-image: url('./img/button.png');
 	background-position: center -2px;
+	outline: none;
 }
 
 .form-signInButton span {
@@ -229,6 +240,9 @@ form {
 	outline: none;
 }
 
+.playButton:active {
+	opacity: 0.9;
+}
 
 .playButton-background {
 	width: 71px;
@@ -281,6 +295,16 @@ video {
 	display: block;
 	margin: 0 auto;
 	margin-top: 15px;
+	outline: none;
+	transition: opacity 100ms;
+}
+
+.confirmButton:hover {
+	opacity: 0.5;
+}
+
+.confirmButton:active {
+	border: 2px solid grey;
 }
 
 .confirmText {
